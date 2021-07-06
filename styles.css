@@ -1,0 +1,59 @@
+@charset "utf-8";
+/*
+   Responsive Travel Style Sheet
+   Author: Dustin Fischer
+   Date:   7/5/2021
+
+   Filename: styles.css
+
+*/
+body{
+  background-image: url("background.jpg");
+  background-attachment: fixed;
+  text-align: center;
+  color: #fff;
+}
+
+
+
+footer{
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-top: 80px;
+}
+footer > p {font-size: .7em;}
+
+div{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+div > img {
+  width: 100%;
+  height: auto;
+  padding-top: 50px
+}
+
+.FunFact{
+  display: none;
+}
+.FunFact > img{margin-top: -40px;}
+
+@media screen and (min-width: 580px)
+{
+  .FunFact
+  {
+    display: block;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 5%;
+  }
+
+  .Section1, .Section2{width:30%; height: auto; display: block; float: left;}
+}
+
+@media screen and (min-width: 1280px)
+{
+  .Sections{display: flex; margin-right: auto; width: 80%;}
+  .Sections > Div {width: 100%; padding: 0 10px; }
+}
